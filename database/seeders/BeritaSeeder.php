@@ -18,7 +18,6 @@ class BeritaSeeder extends Seeder
         $pendidikan = Kategori::where('nama', 'Pendidikan')->first();
         $potensi    = Kategori::where('nama', 'Potensi')->first();
 
-        // Dibuat lewat relasi user: user_id terisi otomatis
         $b1 = $admin->beritas()->create([
             'judul'       => 'Turnamen Voli Antar Dusun Resmi Dibuka',
             'kategori_id' => $olahraga->id,

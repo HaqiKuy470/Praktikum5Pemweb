@@ -8,7 +8,6 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // Urutan penting: user, kategori, dan tag harus ada sebelum berita
         $this->call([
             UserSeeder::class,
             KategoriSeeder::class,
